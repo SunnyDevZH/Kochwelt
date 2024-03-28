@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="img/cook.png">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style-resp.css">
+<title>Koch-Welt</title>
+</head>
+<body onload="includeHTML()">
+
+<header w3-include-html="templates/header.html"></header>
+
+<div id="mobile.drop" class="mobile-drop">
+    <nav class="mobile-nav">
+        <a href="start.html">Start</a>
+        <a href="recipe.html">Rezept des Tages</a>
+        <a href="kontaktformular.html">Kontakt</a>
+        <a href="impressum.html">Impressum</a>
+    </nav>
+</div>
+
+<section class="section-1">
+        <div class="first-conainer">
+                <img id="section-1-img"  class="main-img" alt="food-image">
+        </div>
+        <div class="second-container">
+            <div class="text-container">
+                    <h1>Mein Rezept</h1>
+                    <p id="recipe-intro"></p>
+            </div>
+                <a id="startButton"  href="recipe.html" class="button">Rezept öffnen</a>
+           
+         </div>
+</section>
+
+<section class="section-2">
+    <h2 class="section-2-tile">Lust auf was Neues?</h2>
+    <div class="section-2-container">
+    <div class="menu">
+        <a  href="recipe.html"><img src="./img/penne-rigate.jpg" alt="" class="menu-img"></a>
+        <p>Penne Rigate mit einer Cremebr <br> aus karamellisierten Zwiebeln</p>
+    </div>
+
+    <div class="menu">
+        <a href="recipe-2.html"><img src="./img/ustipci.jpg" alt="" class="menu-img"></a>
+        <p> Uštipci <br> Kroatische Teigbällchen </p>
+    </div>
+
+    <div class="menu">
+        <a href="recipe-3.html"><img src="./img/gyros-nudelauflauf.jpg" alt="" class="menu-img"></a>
+        <p>Gyros-Nudelauflauf in <br> Metaxasoße</p>
+    </div>
+</div>
+</section>
+
+<section class="section-3">
+    <h2>Was ist Besser?</h2>
+    <div class="comparison-div">
+        <p>Der wichtigste Unterschied ist die Form. Ein Wok ist kugelig und es gibt keinen Unterschied zwischen dem Boden und dem Rand. Der Boden einer normalen Pfanne hingegen ist flach. Damit ein Wok auch in Haushaltsküchen seine Verwendung finden kann, haben diese zwar eine kugelige Form, sind am Boden aber auch abgeflacht, damit sie auf dem Herd stehen können. Wenn man es genau nimmt, dann ist ein Wok gleichzeitig auch eine Pfanne. Er unterscheidet sich jedoch von der Form und Nutzung stark von herkömmlichen Pfannen, weswegen hier oftmals unterschieden wird.
+
+           <br> <br> Eine Besonderheit beim Kochen mit einem Wok ist zudem das Arbeiten mit sehr hohen Temperaturen. Während die optimale Temperatur im Wok bei 200 °C bis 250 °C liegt, liegt die ideale Temperatur für eine Pfanne deutlich darunter. In der modernen Welt haben sowohl Wok wie auch eine Pfanne ihre Daseinsberechtigung und dürfen in keinem Haushalt fehlen. Je nach Gericht und Rezeptur sind entweder Wok oder die Pfannge heranzuziehen.
+        </p>
+
+        <a href="#"><img id="comparison-img" src="" alt=""></a>
+    </div>
+
+
+</section>
+
+<footer w3-include-html="templates/footer.html"></footer>
+
+<script src="script.js"></script>
+<script src="menu.js"></script>
+
+
+<body>
+</html>

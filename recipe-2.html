@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/cook.png">   
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-resp.css">
+    <title>Kochwelt</title>
+
+</head>
+<body onload="includeHTML()">
+    <div class="header" header w3-include-html="templates/header.html">
+    </div>
+
+
+    <div id="mobile.drop" class="mobile-drop">
+        <nav class="mobile-nav">
+            <a href="start.html">Start</a>
+            <a href="recipe.html">Rezept des Tages</a>
+            <a href="kontaktformular.html">Kontakt</a>
+            <a href="impressum.html">Impressum</a>
+        </nav>
+    </div>
+    <div class="recipeheader">    
+    <h1> USTIPKE </h1>
+    <img onclick="wok()" id="recipeImg" class="recipe1" src="./img/ustipci.jpg" alt="recipe2"> 
+    </div>
+    <div class="recipeinfromation">
+    <div class="recipesymbol">
+    <img class="clock" src="./img/icons/clock-regular.svg" alt="clock">  
+    <span id="recipetime">35 Min</span>
+    </div>   
+    
+    <div class="recipesymbol"> 
+    <img class="difficulty" src="./img/icons/brain-solid.svg" alt="brain">
+    <span id="difficulty">normal</span>  
+    </div>   
+    <div class="recipesymbol">
+    <img class="date" src="./img/icons/calendar-alt-regular.svg" alt="date">
+    <span id="date">31/3/2022</span>
+    </div>
+    </div>
+   
+    
+
+    <div class="recipeingredients">
+    <div class="portions">
+    <span  class="portionsfor">Zutaten für </span>
+    <input type="number" value="1" min="0" max="40" id="portionscount" class="portionscount" required>     
+    <button onclick="calc()" class= "button" id="calculate-btn"> Portionen </button>
+    </div>
+  <ul id="ingredient-list" class="ingredient-list">
+            <li  id="mingredient"><span class="ingredient">250</span>g Mehl</li>
+            <li  id="mingredient"><span class="ingredient">1</span>Tl Salz</li>
+            <li  id="mingredient"><span class="ingredient">120</span>Ml Milch</li>
+            <li  id="mingredient"><span class="ingredient">80</span>g Staubzucker</li>
+            <li  id="mingredient"><span class="ingredient">30</span>g Joghurt</li>
+            <li  id="mingredient"><span class="ingredient">1.75</span>EL Apfelessig oder Weißweinessig</li>
+            <li  id="mingredient"><span class="ingredient">1</span>WF Hefe</li>
+            <li  id="mingredient"><span class="ingredient">150</span>ML Wasser</li>
+            <li  id="mingredient"><span class="ingredient">2 </span>Stk	Eier</li>
+            <li  id="mingredient"><span class="ingredient">1</span>TL	Kristallzucker</li>
+    </ul>
+    </div>
+   
+    
+    <h2> Zubereitung </h2>    
+    <div class="cooking-main">
+    <div class="cooking-time">
+    <div class="recipesymbol">
+    <img class="clock" src="img/icons/clock-regular.svg" alt="clock">  
+    <span id="recipetime">Arbeitszeit ca. 15 Minuten</span>
+    </div>
+    <div class="recipesymbol">
+    <img class="clock" src="img/icons/clock-regular.svg" alt="clock">  
+    <span id="recipetime">Koch-/Backzeit ca. 20 Min</span>
+    </div>
+    <div class="recipesymbol">
+    <img class="clock" src="img/icons/clock-regular.svg" alt="clock">  
+    <span id="recipetime">Gesammtzeit 35 Min</span>
+    </div>
+    </div>
+    <div class="preparation">
+    <p class="preparation-text"><b>1.</b> Für das Ustipke Rezept zuerst Eier, Wasser, Salz, Zucker, Hefe und Mehl gut verkneten. Dazu eignet sich auch gut eine Küchenmaschine. In der Mitte des Teiges ein Loch machen und die Milch sowie das Joghurt langsam zufügen. Alles gut verkneten.<br><br>
+                               <b> 2.</b> Dann die Masse mit Frischhaltefolie abdecken und 15-20 Minuten bei Zimmertemperatur rasten lassen.<br><br>   
+                               <b> 3.</b> Öl in einen Topf geben und heiß werden lassen. Den Teig mit dem Löffel abstechen und in das Öl geben. Die Teigbällchen müssen schwimmend   goldbraun ausgebacken werden.<br><br>        
+                               <b>4.</b>  Auf beiden Seiten goldbraun braten. Mit Zucker bestreut servieren.<br><br>     
+    </p>                        
+    </div>
+    </div>
+    <div class="writer.main">
+    <h2>Rezept erstellt von </h2>
+    <div class="writer">
+    <img src="profile/Mario.jpeg" class="picture" alt="my profilpicture">
+    <p> Mario Odrljin</p>    
+    </div>
+    </div>
+    </div>   
+    
+
+    <footer w3-include-html="templates/footer.html"></footer>
+
+    <script src="script.js"></script>
+    </body>
+
+
+
+
+
+
+
+</html>

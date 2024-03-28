@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/cook.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-resp.css">
+    <title>Kochwelt</title>
+
+</head>
+<body onload="includeHTML()">
+    <div class="header" header w3-include-html="templates/header.html">
+    </div>
+  
+    <div id="mobile.drop" class="mobile-drop">
+        <nav class="mobile-nav">
+            <a href="start.html">Start</a>
+            <a href="recipe.html">Rezept des Tages</a>
+            <a href="kontaktformular.html">Kontakt</a>
+            <a href="impressum.html">Impressum</a>
+        </nav>
+    </div>
+   
+   
+
+    <div class="recipeheader">    
+    <h1> Gyros-Nudelauflauf in Metaxasoße </h1>
+    <img onclick="wok()" id="recipeImg" class="recipe1" src="./img/gyros-nudelauflauf.jpg" alt="recipe3" > 
+    </div>
+    <div class="recipeinfromation">
+    <div class="recipesymbol">
+    <img class="clock" src="./img/icons/clock-regular.svg" alt="clock">  
+    <span id="recipetime">30 Min</span>
+    </div>   
+    
+    <div class="recipesymbol">
+    <img class="difficulty" src="./img/icons/brain-solid.svg" alt="brain">
+    <span id="difficulty">normal</span>  
+    </div>   
+    <div class="recipesymbol">
+    <img class="date" src="./img/icons/calendar-alt-regular.svg" alt="date">
+    <span id="date">30/3/2022</span>
+    </div>
+    </div>
+   
+    
+
+    <div class="recipeingredients">
+    <div class="portions">
+    <span  class="portionsfor">Zutaten für </span>
+    <input type="number" value ="1" min="0" max="40" id="portionscount" class="portionscount" required>     
+    <button onclick="calc()" class= "button" id="calculate-btn"> Portionen </button>
+    </div>
+    <ul id="ingredient-list" class="ingredient-list">
+            <li  id="mingredient"><span class="ingredient">62.5</span> g Nudeln</li>
+            <li  id="mingredient"><span class="ingredient">125</span> g Gyrosfleisch</li>
+            <li  id="mingredient"><span class="ingredient">0.25</span> Paprikaschote(n), rote</li>
+            <li  id="mingredient"><span class="ingredient">0.5</span> Zwiebel(n)</li>
+            <li  id="mingredient"><span class="ingredient">37.5</span> g Champignons, frisch </li>
+            <li  id="mingredient"><span class="ingredient">12.5</span>g Tomatenmark </li>
+            <li  id="mingredient"><span class="ingredient">50</span> g Schmand</li>
+            <li  id="mingredient"><span class="ingredient">1</span> cl Metaxa</li>
+            <li  id="mingredient"><span class="ingredient">31.5</span> Käse, geriebener</li>
+            <li class="non-unit" id="mingredient"><span class="ingredient"></span> Salz und Pfeffer</li>
+            <li class="non-unit" id="mingredient"><span class="ingredient"></span> Paprikapulver</li>
+    </ul>
+    
+    </div>
+   
+    
+    <h2> Zubereitung </h2>    
+    <div class="cooking-main">
+    <div class="cooking-time">
+    <div class="recipesymbol">
+    <img class="clock" src="img/icons/clock-regular.svg" alt="clock">  
+    <span id="recipetime">Arbeitszeit ca. 30 Minuten</span>
+    </div>
+    <div class="recipesymbol">
+    <img class="clock" src="img/icons/clock-regular.svg" alt="clock">  
+    <span id="recipetime">Koch-/Backzeit ca. 50 Min</span>
+    </div>
+    <div class="recipesymbol">
+    <img class="clock" src="img/icons/clock-regular.svg" alt="clock">  
+    <span id="recipetime">Gesammtzeit ca. 1 Stunde 20 Min</span>
+    </div>
+    </div>
+    <div class="preparation">
+    <p class="preparation-text"> Nudeln in ausreichend Salzwasser kochen, abgießen und in eine Auflaufform geben. Gyros in Öl anbraten. Dann ebenfalls in die Auflaufform geben. <br><br>
+
+        Das Gemüse waschen, klein schneiden und in demselben Öl anbraten, in dem zuvor das Gyros angebraten wurde. Noch etwas mit Salz und Pfeffer würzen. Das Gemüse nun zu dem Gyros und den Nudeln in die Auflaufform geben und vermengen. <br><br>
+        
+        Das Öl mit Sahne ablöschen und den Schmand einrühren. Nun auch Tomatenmark und Metaxa hinzugeben. Nach Belieben vom Tomatenmark und Metaxa etwas mehr hinzugeben. Mit Salz und Pfeffer, gegebenenfalls mit Paprikapulver und anderen Gewürzen würzen. <br><br>
+        
+        Nun die Soße über die Zutaten in der Auflaufform gießen, Käse drüber streuen und bei 180 °C Umluft für 20 - 30 Minuten in den Ofen schieben.</p>
+    </div>
+    </div>
+    <div class="writer.main">
+    <h2>Rezept erstellt von </h2>
+    <div class="writer">
+    <img src="profile/yannickvaterlaus.jpeg" class="picture" alt="my profilpicture">
+    <p> Yannick Vaterlaus </p>    
+    </div>
+    </div>
+    </div>   
+    
+
+    <footer w3-include-html="templates/footer.html"></footer>
+
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+    </body>
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/cook.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-resp.css">
+    <title>Kochwelt</title>
+
+</head>
+<body onload="includeHTML()">
+    <div class="header" header w3-include-html="templates/header.html">
+    </div>   
+
+    <div id="mobile.drop" class="mobile-drop">
+        <nav class="mobile-nav">
+            <a href="start.html">Start</a>
+            <a href="recipe.html">Rezept des Tages</a>
+            <a href="kontaktformular.html">Kontakt</a>
+            <a href="impressum.html">Impressum</a>
+        </nav>
+    </div>
+
+    <div class="recipeheader">    
+    <h1> Penne Rigate </h1>
+    <img id="recipeImg" class="recipe1" src="./img/penne-rigate.jpg" alt="recipe1"> 
+    </div>
+    <div class="recipeinfromation">
+    <div class="recipesymbol">
+    <img class="clock" src="./img/icons/clock-regular.svg" alt="clock">  
+    <span id="recipetime">20 Min</span>
+    </div>   
+    
+    <div class="recipesymbol">
+    <img class="difficulty" src="./img/icons/brain-solid.svg" alt="brain">
+    <span id="difficulty">einfach</span>  
+    </div>   
+    <div class="recipesymbol">
+    <img class="date" src="./img/icons/calendar-alt-regular.svg" alt="date">
+    <span id="date">30/3/2022</span>
+    </div>
+    </div>
+   
+    
+
+    <div class="recipeingredients">
+    <div class="portions">
+    <span  class="portionsfor">Zutaten für </span>
+    <input type="number" value="1" min="0" max="40" id="portionscount" class="portionscount" required>     
+    <button onclick="calc()" class= "button" id="calculate-btn"> Portionen </button>
+    </div>
+  <ul id="ingredient-list" class="ingredient-list">
+            <li  id="mingredient"><span class="ingredient">100.5</span> <span class="unit">g</span> Barilla AL BRONZO Penne Rigate</li>
+            <li  id="mingredient"><span class="ingredient">87.5</span> <span class="unit">g</span> Zwiebel(n), rote</li>
+            <li  id="mingredient"><span class="ingredient">17.5</span> <span class="unit">g</span> Zucker, brauner</li>
+            <li  id="mingredient"><span class="ingredient">22.5</span> <span class="unit">g</span> Apfelessig</li>
+            <li  id="mingredient"><span class="ingredient">12.5</span> <span class="unit">g</span> Weißweinessig </li>
+            <li  id="mingredient"><span class="ingredient">0.25</span> <span class="unit">g</span> Lorbeerblatt </li>
+            <li  id="mingredient"><span class="ingredient">30</span> <span class="unit">g</span> Butter</li>
+            <li  id="mingredient"><span class="ingredient">15</span> <span class="unit">g</span> Parmesan, geriebener</li>
+            <li  class="non-unit"><span class=""></span>Salz und Pfeffer</li>
+            <li  class="non-unit"><span class=""></span> Thymianblättchen</li>
+    </ul>
+    
+    </div>
+   
+    
+    <h2> Zubereitung </h2>    
+    <div class="cooking-main">
+    <div class="cooking-time">
+    <div class="recipesymbol">
+    <img class="clock" src="img/icons/clock-regular.svg" alt="clock">  
+    <span id="recipetime">Arbeitszeit ca. 20 Minuten</span>
+    </div>
+    <div class="recipesymbol">
+    <img class="clock" src="img/icons/clock-regular.svg" alt="clock">  
+    <span id="recipetime">Koch-/Backzeit ca. 12 Min</span>
+    </div>
+    <div class="recipesymbol">
+    <img class="clock" src="img/icons/clock-regular.svg" alt="clock">  
+    <span id="recipetime">Gesammtzeit 32 Min</span>
+    </div>
+    </div>
+    <div class="preparation">
+    <p class="preparation-text">1. Für die Zwiebelsauce den braunen Zucker in etwas Butter erhitzen, bis er sich gelöst hat, die in Scheiben geschnittene Zwiebel und das Lorbeerblatt hinzufügen und alles 5 Minuten lang dünsten. <br> <br>
+
+        2. Mit einer Mischung aus den Flüssigkeiten (Apfel- und Weißweinessig), ablöschen, mit Pfeffer würzen, alles fast vollständig einkochen lassen. <br> <br>
+        
+        3. Die restliche Butter, die Sahne und den Parmesan zu den Zwiebeln geben. Erhitzen und mit einem Pürierstab pürieren. <br><br>
+        
+        4. Die Pasta nach der auf der Packung angegebenen Zeit kochen, kurz in der Zwiebelcreme schwenken und auf Tellern anrichten, ohne die Al Bronzo Penne Rigate zu überhäufen. <br><br>
+        
+        5. Mit ein paar Thymianblättern und, nach Wunsch auch ein paar Zwiebelstückchen, die ein paar Minuten im Essig gekocht wurden, garnieren.</p>
+    </div>
+    </div>
+    <div class="writer.main">
+    <h2>Rezept erstellt von </h2>
+    <div class="writer">
+    <img src="profile/Karwan.jpg" class="picture" alt="my profilpicture">
+    <p> <i> Karwan Lazgeen </i></p>    
+    </div>
+    </div>
+    </div>   
+    
+
+    <footer w3-include-html="templates/footer.html"></footer>
+
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+    </body>
+
+
+
+
+
+
+
+</html>

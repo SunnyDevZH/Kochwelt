@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="img/cook.png">
+    <link rel="stylesheet" href="style-resp.css">
+    <title>Koch-welt</Koch-welt></title>
+    <script src="script.js"></script>
+</head>
+<body onload="includeHTML()">
+
+<header w3-include-html="templates/header.html"></header>
+
+<div id="mobile.drop" class="mobile-drop">
+    <nav class="mobile-nav">
+        <a href="start.html">Start</a>
+        <a href="recipe.html">Rezept des Tages</a>
+        <a href="kontaktformular.html">Kontakt</a>
+        <a href="impressum.html">Impressum</a>
+    </nav>
+</div>
+
+
+<form class="boxstyle" action="http://yannick-vaterlaus.developerakademie.net/Kochwelt/send_mail.php" method="POST">
+    
+    <h1 class="contact-header">Kontakformular</h1>
+    <p class="contact-text">Wir freuen uns über deine Nachricht!</p>
+    <div class="info-contact">
+        <input class="input" name="name" placeholder="Dein Name" required>
+        <input class="input" name="name" placeholder="Deine Email" required>  
+    </div>
+    <textarea class="textarea" name="message" placeholder="Deine Nachricht an uns" required></textarea>
+
+    <button class="button" type="submit">Mail senden</button>
+</form>
+
+<footer w3-include-html="templates/footer.html">
+</footer>
+
+<script src="menu.js"></script>
+</body>
+</html>
